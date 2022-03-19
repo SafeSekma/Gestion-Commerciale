@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Livreur
+{% endblock %}
+
+{% block body %}
+	<h1>Edit Livreur</h1>
+
+	{{ include('livraieur/_form.html.twig', {'button_label': 'Update'}) }}
+
+	<a href="{{ path('livraieur_index') }}" class="btn-success">back to list</a>
+
+	{{ include('livraieur/_delete_form.html.twig') }}
+{% endblock %}
